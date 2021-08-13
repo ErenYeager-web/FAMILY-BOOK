@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <title>
+            FAMILY BOOK
+        </title>
+    <body>
+        <h1>
+            My Family Book
+        </h1>
+        <hr><hr>
+        <img id="family_img" src="img1.jpg">
+        <h3 id="one">1.OUR FAMILY BOOK</h3>
+        <button type="button" onclick="family()">NEXT</button>
+        <hr>
+        <script>
+            var names=[
+                "2.MY FATHER (PRAMOD MANE)",
+                "3.MY MOTHER (PURVA MANE)",
+                "4.MY SISTER (SHREYA MANE)",
+                "5.ME (ARYAN MANE)"
+            ];
+            var images=[
+                "img2.png",
+                "img3.jpg",
+                "img4.jpeg",
+                "img5.webp"
+            ];
+            var i=0;
+            function family(){
+                document.getElementById("one").innerHTML=names[i];
+                document.getElementById("family_img").src=images[i];
+                i++;
+                if(i==4){
+                    i=0;
+                }}
+        </script>
+        </body>
+        </html>
+        
